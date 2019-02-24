@@ -10,3 +10,6 @@ Angular is not a tool which allows us to write static HTML file,It allows us to 
 ### Routing
 With **Routing** we can manage the use of different URLs,to the user it will apear that we are changing the page but technically we are on the same page.
 **HTTP** Angular can't connect to the database directly but it can connect to the web server which will connect to the database which can be used to store the data
+## TypeScript
+It is a superset of JavaScript,It offers more features than JS.
+It doesn't run in the browser it is Compiled into JS and that JS is compiled into browser which is held by CLI that is why we need the CLI.
