@@ -1,10 +1,11 @@
 #   How to create/start and run a new Project
-   1.go to the folder where you want to save your project by using command line,
-   2.now use **ng new Project_Name** hit enter
-   3.it will create the project,n
-   4.after that write **ng serve** in the command line to run the project,
+1. go to the folder where you want to save your project by using command line,
+2. now use **ng new Project_Name** hit enter
+3. it will create the project,n
+4. after that write **ng serve** in the command line to run the project,
     Angular runs on **localhost:4200** by default
 # Angular-JS
+Angular is a framework which allows us to create a single page web applications.
 Angular is not a tool which allows us to write static HTML file,It allows us to mix static HTML code and dynamic thing that we want in the output of the code (possibly styling and typescript)
 ##  Data Binding
 ##  String Interpolation
@@ -18,3 +19,7 @@ With **Routing** we can manage the use of different URLs,to the user it will ape
 ## TypeScript
 It is a superset of JavaScript,It offers more features than JS.
 It doesn't run in the browser it is Compiled into JS and that JS is compiled into browser which is held by CLI that is why we need the CLI.
+### Selector
+It assignss the string as a value.
+## Components
+**Decorators** is a TypeScript feature which allows us to enhance the class,enhance the elements in the code.
