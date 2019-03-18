@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Multi-Level Dropdowns</h2>
+        <p>In this example, we have created a .dropdown-submenu class for multi-level dropdowns (see style section
+            above).</p>
+        <p>Note that we have added jQuery to open the multi-level dropdown on click (see script section below).</p>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="https://drive.google.com/uc?id=1GpbUwPrIv9l26KmXWmrPzbk2FO9x4Q4k">HTML</a></li>
+                <li><a tabindex="-1" href="https://drive.google.com/uc?id=1GpbUwPrIv9l26KmXWmrPzbk2FO9x4Q4k">CSS</a></li>
+                <li class="dropdown-submenu">
+                    <a class="test" tabindex="-1">New dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="https://drive.google.com/uc?id=1GpbUwPrIv9l26KmXWmrPzbk2FO9x4Q4k">2nd
+                                level dropdown</a></li>
+                        <li><a tabindex="-1" href="https://drive.google.com/uc?id=1GpbUwPrIv9l26KmXWmrPzbk2FO9x4Q4k">2nd level dropdown</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://drive.google.com/uc?id=1GpbUwPrIv9l26KmXWmrPzbk2FO9x4Q4k">3rd level dropdown</a></li>
+                                <li><a href="https://drive.google.com/uc?id=1GpbUwPrIv9l26KmXWmrPzbk2FO9x4Q4k">3rd level dropdown</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="content"></div>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-submenu a.test').click(function (e) {
+                event.stopPropagation();
+                // hide the open children
+                $(this).find(".dropdown-submenu").removeClass('open');
+                // add 'open' class to all parents with class 'dropdown-submenu'
+                $(this).parents(".dropdown-submenu").addClass('open');
+                // this is also open (or was)
+                $(this).toggleClass('open');
+
+            });
+
+            // first level links
+            $('.dropdown-menu li a').on('click', function (e) {
+                e.preventDefault();
+                if (($(this).attr('href') !== undefined) && ($(this).attr('href') !== '#')) {
+                    // calling function with parameter
+                    open($(this).attr('href'));
+                    // below line fixes dropdown issue
+                    $('.open').removeClass('open');
+                }
+            });
+
+            // second level links
+            $('.dropdown-submenu ul.dropdown-menu li a').on('click', function (e) {
+                e.preventDefault();
+                if (($(this).attr('href') !== undefined) && ($(this).attr('href') !== '#')) {
+                    // calling function with parameter
+                    open($(this).attr('href'));
+                    // below line fixes dropdown issue
+                    $('.open').removeClass('open');
+                }
+            });
+        });
+
+        function open(url) {
+            // using parameter in Iframe
+            document.getElementById('content').innerHTML =
+                '<iframe id="if1" width="100%" height="254" style="visibility:visible" src="' + url + '"></iframe>';
+        }
+    </script>
+
+</body>
+
+</html>
