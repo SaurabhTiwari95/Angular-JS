@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+</style>
+</head>
+
+<body>
+<div class="split left">
+        <div class="container"
+        
+
+			<b><h2 style="color:#DC3D24">Please select the appropriate dropdown to select the queue type.</h2></b>
+            <h4>After selecting the queue type, Proceed with futher dropdowns to select the entitites.</h4>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown">Queue Type 
+    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#">Scene Category<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <p>Select entity</p>
+                <li><a tabindex="-1" href="https://docs.google.com/presentation/d/1N_iWWCY-CVX6bGsxwW0kBJvidQCcnWs1YKjKi6a1Atg/edit?usp=drive_web&ouid=116855019574245540030">Indoor</a></li>
+                <li><a tabindex="-1" href="https://docs.google.com/presentation/d/19PSDmskCUHyNzXG1dLslS2c2c5RQAmQBhj3dyMSyr0g/edit?usp=drive_web&ouid=116855019574245540030">Outdoor</a></li>
+                <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1fCzvAhHNpArfexRC07IVge9pK4hU9xcPykOpXE4M9Ew/edit?usp=drive_web&ouid=116855019574245540030">Both </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1UqOSdyTWCihqCartZXs46PskTDmBSTMvOGDIh_91X6o/edit?usp=drive_web&ouid=116855019574245540030">Day Vision</a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1NjoHc5GLuQrBUI0KSEBT6kUS8aDja6OoNQglk7xtlxE/edit?usp=drive_web&ouid=116855019574245540030">Night Vision</a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1SXUEOyL4aY8iJp9_BwciCAo_-IMoR_y5VGjjq2Vkm-4/edit?usp=drive_web&ouid=116855019574245540030">Street </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1MZPjxowjEVZCa3A9VIVrfGCNIITcvbUkHX6I6eeYZBI/edit?usp=drive_web&ouid=116855019574245540030">Yard </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1SY2YPMA6bEDlc4xTbmcizxO5mgCxUZMkfputyBQsQUM/edit?usp=drive_web&ouid=116855019574245540030">Driveway </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1kSXWs2Bfq27vyjNuX-yzMj4RDsoOkmx9W9o39kicsg8/edit?usp=drive_web&ouid=116855019574245540030">Porch </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1oJfj7eciD9RcaXCa325XKDBABxrrZONlmJti3g47ML0/edit?usp=drive_web&ouid=116855019574245540030">Garage </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1j3SGsEafjk2FNTgmZACh1L8tjq04gsu9SnQ9U4Hp7Rc/edit?usp=drive_web&ouid=116855019574245540030">Entryway </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1EAnHNybXgAH1SOPpflZHVcaP7zEP10IEfmggwFwDfuA/edit?usp=drive_web&ouid=116855019574245540030">Living </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1rqRCsKSaduAaitaYckcm_v27eB0EjxLKxyHRb0Mcbo8/edit?usp=drive_web&ouid=116855019574245540030">Kitchen </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1sO7qyWz4nJ9BhZ38Upjw0DJ1VRWZ6Ib6IIQuEdmKbT8/edit?usp=drive_web&ouid=116855019574245540030">Nursery </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1lPRU-eb5R3cJiAB2Yz5Cf4_WYamTtPsJdK5M4sTMtCs/edit?usp=drive_web&ouid=116855019574245540030">Bedroom </a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1gszkHcdNWfbM2EwnUYyzWJaTBSCLC02oenuQaqphZmg/edit?usp=drive_web&ouid=116855019574245540030">Dining Room</a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1KK-xBgtGZAyhcD-nggFdCleOGEdUPGniJflaFZsGl_U/edit?usp=drive_web&ouid=116855019574245540030">Other </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#">12_object/Seeded_Labeler<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <p>Select entity</p>
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1Wm2S-D4pVgTeDgP5kACvo7WjcExqsMy2kUFTMF_ifXs/edit?usp=drive_web&ouid=116855019574245540030">Person</a></li>
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1-DjVy6IPdEBJ148mU50_xYfGyMxnSl4rM5WMHyHZqR8/edit">Truck</a></li>                      
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1AntkBKJt0PFNZyo4axmudxPikjHvYytNjJODX50j5-A/edit">Parcel/Package </a></li>                      
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/16fT5mBA33jEyLr8Ar4CEHORa4J--VP6AXATD5sEcttM/edit#slide=id.p">Motor Bike</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1JCR7MgbHNKJs75MUS474g2aD7B1lUiOLDM253pblCek/edit#slide=id.p">Face</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/12Ld01BSAd87jaN2LLtd_cGa8pNpvduH5-Cwoka30y20/edit#slide=id.p">Dog</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1PK0bGdFqnAKgCo0Xus0L7nSvX9tCo-CyBfWjOAsEFgg/edit#slide=id.p" >Cat</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1g9bHMpfVV9vQohPdAiOul2IVALPSQNS3DHuMB_-S9B4/edit#slide=id.p" >Car</a></li>
+                            
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1frJEHnS2xNDzddc3p5Vs3Nne7coGF9xFyOFLNPTUgMc/edit">Bus</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1xhnctsEf-3SGAgBHmxPm5ZbcQoWVXppsMwQx9gLSPwQ/edit#slide=id.p">Bird</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1WKivMtbj_40uw1QmqI_UAWZfThDqsGFcOm467Iy86Kw/edit#slide=id.p">Bicycle </a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1PTv-GwZm2UWxkPEMdWFwz0qH0Xs1rqmnXLRlkTHz0Vk/edit#slide=id.p">Baby </a></li>
+                            
+                            <!--<li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">3rd level dropdown</a></li>
+                                    <li><a href="#">3rd level dropdown</a></li>
+                                </ul>
+                            </li>-->
+                        </ul>
+                    </li>                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<p>Static Object Labeler</p> -->                    
+<li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#">Static Object Labeler<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <p>Select entity</p>
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1aVyTnROISTixDY_0l_rnMZXar7DsmsNXKaElhTArgwE/edit#slide=id.g4cf87e7a35_0_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Window</a></li>
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1nzGfq7g6EbpLZPX7L88tP9E9AmkEd5CVJjFPwpfInuk/edit#slide=id.g51bbaa732e_0_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Television</a></li>
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1nNeku9s5D1gGUjYm5k3yhbQ8gASDMCPMSTarsHBWnAI/edit#slide=id.p" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Photo of Person</a></li>
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1PE1FiyFyR3X-avfQrpGt9i9N2-8-htsUXFv0T71z1mo/edit#slide=id.p" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Illustration of Person</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1KFdiLwVgI8-Utc_fJGv7lVje3g24hG4FDuLC-eEVigc/edit#slide=id.g50ac34549f_0_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Door</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/12-dSHYRffXJpRLLEEQagGAV8cv_mLt9-5a2JE7aqjXg/edit#slide=id.p" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Crib</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/12qeE58K-igmln_o9yn_k7g670lea4RC-sn8MXx6TNNE/edit#slide=id.p" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Coat Rack</a></li>
+                           
+                            <!--<li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">3rd level dropdown</a></li>
+                                    <li><a href="#">3rd level dropdown</a></li>
+                                </ul>
+                            </li>-->
+                        </ul>
+                    </li>
+
+
+<!--<p>Person Leaving</p> -->                    
+<li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#">Person Leaving<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <p>Select entity</p>
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1dFqQfWPFEGa3Xh03Ynsoyrk2vXsyMQUThNH1BsVPIjc/edit#slide=id.g4cec614a4c_3_154" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Person_Leaving_Side_View</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1zk2NXQGGyEeFLxy_LYjYktUeDlhe6b1KcjP0jxmjTAw/edit#slide=id.p" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Person_Leaving_Frontal_View</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1RVYQUcVu_1FP5xklt1k4Ylz_Rz4aVliypauaXU5y7bo/edit#slide=id.g50203f54f0_1_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Escalate</a></li>
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/18P2QXkSNFjjGjA5_yWQlJx3Rt7c1DnuZ26gd7ZWtPSU/edit#slide=id.p" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">No person leaving</a></li>
+
+                            <!--<li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">3rd level dropdown</a></li>
+                                    <li><a href="#">3rd level dropdown</a></li>
+                                </ul>
+                            </li>-->
+                        </ul>
+                    </li>
+
+
+
+
+<!--<p>Package Event</p> -->                    
+<li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#">Package Event<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <p>Select entity</p>
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/11vbPtF7hf6znRHZ6GtVpkEp2lTdgDAewxD_3FGM_xzc/edit#slide=id.g501101f7fa_0_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Visible at Rest Package Retrieval</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1vS3YfIimRCd9tZ7nvSx1j0bpQeslusc5mAWh0-8XhdI/edit#slide=id.g509f6962d1_0_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Package Handoff</a></li>
+                            
+                            
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1TdNOssq8gzxgOqNnq1r4X5rEY6K5TAZbTvBfUax2QKY/edit#slide=id.g4ff829b54f_0_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Package Drop Visible at Rest</a></li>
+
+<li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1tW3dUb6IyJVQAX9EU3dgGb5n0dWXycoiE4Onfw7JA3s/edit#slide=id.g500f2519b4_0_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Package Drop Not Visible at Rest</a></li>
+
+<li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1QuUpIujYc0T0dh7V2oRmhT5k1gr4jkeTkVBtTn3OUYg/edit#slide=id.g33cf0042b4_0_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Other Displaced Object</a></li>
+
+<li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1-B3qmamoi5lUiyxs-WbDMgR3RWwioj-6R4tcbVWCpKU/edit#slide=id.g509ef23f52_0_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Not Visible at Rest Package Retrieval</a></li>
+
+<li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1wr_4ZdK2M7l3zuWfg575CnfsTuVMMphNBG5tU6zIJA0/edit#slide=id.p" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">None Of the Above</a></li>
+
+                            <li><a target="" tabindex="-1" href="https://docs.google.com/presentation/d/1Rh4oEgouifpfV7TIOkuIlDXOO0e6YYRKh7j5rf8ulek/edit#slide=id.g509f64d6f7_0_0" onclick="window.open(this.href, 'Query Sheet', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">Escalate</a></li>
+
+ <!--<li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">3rd level dropdown</a></li>
+                                    <li><a href="#">3rd level dropdown</a></li>
+                                </ul>
+                            </li>-->
+                        </ul>
+                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="content"></div>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-submenu a.test').click(function (e) {
+                event.stopPropagation();
+                // hide the open children
+                $(this).find(".dropdown-submenu").removeClass('open');
+                // add 'open' class to all parents with class 'dropdown-submenu'
+                $(this).parents(".dropdown-submenu").addClass('open');
+                // this is also open (or was)
+                $(this).toggleClass('open');
+
+            });
+
+            // first level links
+            $('.dropdown-menu li a').on('click', function (e) {
+                e.preventDefault();
+                if (($(this).attr('href') !== undefined) && ($(this).attr('href') !== '#')) {
+                    // calling function with parameter
+                    open($(this).attr('href'));
+                    // below line fixes dropdown issue
+                    $('.open').removeClass('open');
+                }
+            });
+
+            // second level links
+            $('.dropdown-submenu ul.dropdown-menu li a').on('click', function (e) {
+                e.preventDefault();
+                if (($(this).attr('href') !== undefined) && ($(this).attr('href') !== '#')) {
+                    // calling function with parameter
+                    open($(this).attr('href'));
+                    // below line fixes dropdown issue
+                    $('.open').removeClass('open');
+                }
+            });
+        });
+
+        function open(url) {
+            // using parameter in Iframe
+            document.getElementById('content').innerHTML =
+                '<iframe id="if1" width="100%" height="254" style="visibility:visible" src="' + url + '"></iframe>';
+        }
+    </script>
+
+</body>
+
+</html>
