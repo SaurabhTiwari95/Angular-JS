@@ -8,7 +8,13 @@
 Angular is a framework which allows us to create a single page web applications.
 Angular is not a tool which allows us to write static HTML file,It allows us to mix static HTML code and dynamic thing that we want in the output of the code (possibly styling and typescript)
 ##  Data Binding
+DataBinding = communication
+
 ##  String Interpolation
+## Property Binding
+## Event Binding
+## Two-Way-Binding
+
 ### Ctrl+C
    Used to close the developing process
    When we load the **.html** file,**app-root** dynamically injects the script in the **.HTML** file.
