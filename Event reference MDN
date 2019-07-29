@@ -1,0 +1,691 @@
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+DOM Events are sent to notify code of interesting things that have taken place. 
+Each event is represented by an object which is based on the Event interface, 
+and may have additional custom fields and/or functions used to get additional 
+information about what happened. Events can represent everything from basic user 
+interactions to automated notifications of things happening in the rendering model.
+
+This article offers a list of events that can be sent; some are standard events defined in official specifications, 
+while others are events used internally by specific browsers; for example, Mozilla-specific events are listed so that
+add-ons can use them to interact with the browser.
+
+Most common categoriesSection
+Resource eventsSection
+Event Name	Fired When
+error	A resource failed to load.
+abort	The loading of a resource has been aborted.
+load	A resource and its dependent resources have finished loading.
+beforeunload	The window, the document and its resources are about to be unloaded.
+unload	The document or a dependent resource is being unloaded.
+Network eventsSection
+Event Name	Fired When
+online	The browser has gained access to the network.
+offline	The browser has lost access to the network.
+Focus eventsSection
+Event Name	Fired When
+focus	An element has received focus (does not bubble).
+blur	An element has lost focus (does not bubble).
+WebSocket eventsSection
+Event Name	Fired When
+open	A WebSocket connection has been established.
+message	A message is received through a WebSocket.
+error	A WebSocket connection has been closed with prejudice (some data couldn't be sent for example).
+close	A WebSocket connection has been closed.
+Session History eventsSection
+Event Name	Fired When
+pagehide	A session history entry is being traversed from.
+pageshow	A session history entry is being traversed to.
+popstate	A session history entry is being navigated to (in certain cases).
+CSS Animation eventsSection
+Event Name	Fired When
+animationstart	A CSS animation has started.
+animationcancel	A CSS animation has aborted.
+animationend	A CSS animation has completed.
+animationiteration	A CSS animation is repeated.
+CSS Transition eventsSection
+Event Name	Fired When
+transitionstart	A CSS transition has actually started (fired after any delay).
+transitioncancel	A CSS transition has been cancelled.
+transitionend	A CSS transition has completed.
+transitionrun	A CSS transition has begun running (fired before any delay starts).
+Form eventsSection
+Event Name	Fired When
+reset	The reset button is pressed
+submit	The submit button is pressed
+Printing eventsSection
+Event Name	Fired When
+beforeprint	The print dialog is opened
+afterprint	The print dialog is closed
+Text Composition eventsSection
+Event Name	Fired When
+compositionstart	The composition of a passage of text is prepared (similar to keydown for a keyboard input, 
+but works with other inputs such as speech recognition).
+compositionupdate	A character is added to a passage of text being composed.
+compositionend	The composition of a passage of text has been completed or canceled.
+View eventsSection
+Event Name	Fired When
+fullscreenchange	An element was turned to fullscreen mode or back to normal mode.
+fullscreenerror	It was impossible to switch to fullscreen mode for technical reasons or because the permission was denied.
+resize	The document view has been resized.
+scroll	The document view or an element has been scrolled.
+Clipboard eventsSection
+Event Name	Fired When
+cut	The selection has been cut and copied to the clipboard
+copy	The selection has been copied to the clipboard
+paste	The item from the clipboard has been pasted
+Keyboard eventsSection
+Event Name	Fired When
+keydown	ANY key is pressed
+keypress	ANY key except Shift, Fn, CapsLock is in pressed position. (Fired continously.)
+keyup	ANY key is released
+Mouse eventsSection
+Event Name	Fired When
+auxclick	A pointing device button (ANY non-primary button) has been pressed and released on an element.
+click	A pointing device button (ANY button; soon to be primary button only) has been pressed and released on an element.
+contextmenu	The right button of the mouse is clicked (before the context menu is displayed).
+dblclick	A pointing device button is clicked twice on an element.
+mousedown	A pointing device button is pressed on an element.
+mouseenter	A pointing device is moved onto the element that has the listener attached.
+mouseleave	A pointing device is moved off the element that has the listener attached.
+mousemove	A pointing device is moved over an element. (Fired continously as the mouse moves.)
+mouseover	A pointing device is moved onto the element that has the listener attached or onto one of its children.
+mouseout	A pointing device is moved off the element that has the listener attached or off one of its children.
+mouseup	A pointing device button is released over an element.
+pointerlockchange	The pointer was locked or released.
+pointerlockerror	It was impossible to lock the pointer for technical reasons or because the permission was denied.
+select	Some text is being selected.
+wheel	A wheel button of a pointing device is rotated in any direction.
+Drag & Drop eventsSection
+Event Name	Fired When
+drag	An element or text selection is being dragged (Fired continuously every 350ms).
+dragend	A drag operation is being ended (by releasing a mouse button or hitting the escape key).
+dragenter	A dragged element or text selection enters a valid drop target.
+dragstart	The user starts dragging an element or text selection.
+dragleave	A dragged element or text selection leaves a valid drop target.
+dragover	An element or text selection is being dragged over a valid drop target. (Fired continuously every 350ms.)
+drop	An element is dropped on a valid drop target.
+Media eventsSection
+Event Name	Fired When
+audioprocess	The input buffer of a ScriptProcessorNode is ready to be processed.
+canplay	The browser can play the media, but estimates that not enough data has been loaded to play the media up to its
+end without having to stop for further buffering of content.
+canplaythrough	The browser estimates it can play the media up to its end without stopping for content buffering.
+complete	The rendering of an OfflineAudioContext is terminated.
+durationchange	The duration attribute has been updated.
+emptied	The media has become empty; for example, this event is sent if the media has already been loaded (or partially loaded), 
+and the load() method is called to reload it.
+ended	Playback has stopped because the end of the media was reached.
+loadeddata	The first frame of the media has finished loading.
+loadedmetadata	The metadata has been loaded.
+pause	Playback has been paused.
+play	Playback has begun.
+playing	Playback is ready to start after having been paused or delayed due to lack of data.
+ratechange	The playback rate has changed.
+seeked	A seek operation completed.
+seeking	A seek operation began.
+stalled	The user agent is trying to fetch media data, but data is unexpectedly not forthcoming.
+suspend	Media data loading has been suspended.
+timeupdate	The time indicated by the currentTime attribute has been updated.
+volumechange	The volume has changed.
+waiting	Playback has stopped because of a temporary lack of data.
+Progress eventsSection
+Event Name	Fired When
+abort	Progression has been terminated (not due to an error).
+error	Progression has failed.
+load	Progression has been successful.
+loadend	Progress has stopped (after "error", "abort" or "load" have been dispatched).
+loadstart	Progress has begun.
+progress	In progress.
+timeout	Progression is terminated due to preset time expiring.
+Storage eventsSection
+change (see Non-standard events)
+storage
+
+Update eventsSection
+checking
+downloading
+error
+noupdate
+obsolete
+updateready
+
+Value change eventsSection
+broadcast
+CheckboxStateChange
+hashchange
+input
+RadioStateChange
+readystatechange
+ValueChange
+
+Uncategorized eventsSection
+invalid
+message
+message
+open
+show
+
+Less common and non-standard eventsSection
+Abortable Fetch eventsSection
+Event name	Fired when
+abort	A DOM request is aborted, i.e. using AbortController.abort().
+WebVR eventsSection
+Event name	Fired when
+vrdisplayactivate	When a VR display is able to be presented to, for example if an HMD has been moved to bring it out of standby, 
+or woken up by being put on.
+vrdisplayblur	when presentation to a VRDisplay has been paused for some reason by the browser, OS, or VR hardware — for example, 
+while the user is interacting with a system menu or browser, to prevent tracking or loss of experience.
+vrdisplayconnect	when a compatible VRDisplay is connected to the computer.
+vrdisplaydeactivate	When a VRDisplay can no longer be presented to, for example if an HMD has gone into standby or sleep mode due 
+to a period of inactivity.
+vrdisplaydisconnect	When a compatible VRDisplay is disconnected from the computer.
+vrdisplayfocus	When presentation to a VRDisplay has resumed after being blurred.
+vrdisplaypresentchange	The presenting state of a VRDisplay changes — i.e. goes from presenting to not presenting, or vice versa.
+SVG eventsSection
+SVGAbort
+SVGError
+SVGLoad
+SVGResize
+SVGScroll
+SVGUnload
+SVGZoom
+
+Database eventsSection
+abort
+blocked
+complete
+error
+success
+upgradeneeded
+versionchange
+
+Script eventsSection
+afterscriptexecute
+beforescriptexecute
+
+Menu eventsSection
+DOMMenuItemActive
+DOMMenuItemInactive
+
+Window eventsSection
+close
+
+Popup eventsSection
+popuphidden
+popuphiding
+popupshowing
+popupshown
+
+Tab eventsSection
+visibilitychange
+
+Battery eventsSection
+chargingchange
+chargingtimechange
+dischargingtimechange
+levelchange
+
+Call eventsSection
+alerting
+busy
+callschanged
+cfstatechange
+connected
+connecting
+dialing
+disconnected
+disconnecting
+error
+held, holding
+incoming
+resuming
+statechange
+voicechange
+
+Sensor eventsSection
+compassneedscalibration
+devicemotion
+deviceorientation
+orientationchange
+
+Smartcard eventsSection
+icccardlockerror
+iccinfochange
+smartcard-insert
+smartcard-remove
+stkcommand
+stksessionend
+cardstatechange
+
+SMS and USSD eventsSection
+delivered
+received
+sent
+ussdreceived
+
+Frame eventsSection
+mozbrowserclose
+mozbrowsercontextmenu
+mozbrowsererror
+mozbrowsericonchange
+mozbrowserlocationchange
+mozbrowserloadend
+mozbrowserloadstart
+mozbrowseropenwindow
+mozbrowsersecuritychange
+mozbrowsershowmodalprompt
+mozbrowsertitlechange
+
+DOM mutation eventsSection
+DOMAttributeNameChanged
+DOMAttrModified
+DOMCharacterDataModified
+DOMContentLoaded
+DOMElementNameChanged
+DOMNodeInserted
+DOMNodeInsertedIntoDocument
+DOMNodeRemoved
+DOMNodeRemovedFromDocument
+DOMSubtreeModified
+
+Touch eventsSection
+touchcancel
+touchend
+touchmove
+touchstart
+
+Pointer eventsSection
+pointerover
+pointerenter
+pointerdown
+pointermove
+pointerup
+pointercancel
+pointerout
+pointerleave
+gotpointercapture
+lostpointercapture
+
+Standard eventsSection
+These events are defined in official Web specifications, and should be common across browsers. Each event is listed along with the 
+interface representing the object sent to recipients of the event (so you can find information about what data is provided with each 
+event) as well as a link to the specification or specifications that define the event.
+
+Event Name	Event Type	Specification	Fired when...
+abort	UIEvent	DOM L3	The loading of a resource has been aborted.
+abort	ProgressEvent	Progress and XMLHttpRequest	Progression has been terminated (not due to an error).
+abort	Event	IndexedDB	A transaction has been aborted.
+afterprint	Event	HTML5	The associated document has started printing or the print preview has been closed.
+animationcancel	AnimationEvent 	CSS Animations	A CSS animation has aborted.
+animationend	AnimationEvent 	CSS Animations	A CSS animation has completed.
+animationiteration	AnimationEvent 	CSS Animations	A CSS animation is repeated.
+animationstart	AnimationEvent 	CSS Animations	A CSS animation has started.
+appinstalled	Event	Web App Manifest	A web application is successfully installed as a progressive web app.
+audioprocess	AudioProcessingEvent 	Web Audio API
+The definition of 'audioprocess' in that specification.	The input buffer of a ScriptProcessorNode is ready to be processed.
+audioend 	Event	Web Speech API	The user agent has finished capturing audio for speech recognition.
+audiostart 	Event	Web Speech API	The user agent has started to capture audio for speech recognition.
+beforeprint	Event	HTML5	The associated document is about to be printed or previewed for printing.
+beforeunload	BeforeUnloadEvent	HTML5	The window, the document and its resources are about to be unloaded.
+beginEvent	TimeEvent	SVG	A SMIL animation element begins.
+blocked	 	IndexedDB	An open connection to a database is blocking a versionchange transaction on the same database.
+blur	FocusEvent 	DOM L3	An element has lost focus (does not bubble).
+boundary 	SpeechSynthesisEvent	Web Speech API	The spoken utterance reaches a word or sentence boundary
+canplay	Event	HTML5 media	The user agent can play the media, but estimates that not enough data has been loaded to play the media 
+up to its end without having to stop for further buffering of content.
+canplaythrough	Event	HTML5 media	The user agent can play the media up to its end without having to stop for further buffering of 
+content.
+change	Event	DOM L2, HTML5	The change event is fired for <input>, <select>, and <textarea> elements when a change to the element's 
+value is committed by the user.
+chargingchange	Event	Battery status	The battery begins or stops charging.
+chargingtimechange	Event	Battery status	The chargingTime attribute has been updated.
+click	MouseEvent	DOM L3	A pointing device button has been pressed and released on an element.
+close	Event	WebSocket	A WebSocket connection has been closed.
+complete	 	IndexedDB	A transaction successfully completed.
+complete	OfflineAudioCompletionEvent 	Web Audio API
+The definition of 'OfflineAudioCompletionEvent' in that specification.	The rendering of an OfflineAudioContext is terminated.
+compositionend	CompositionEvent	DOM L3	The composition of a passage of text has been completed or canceled.
+compositionstart	CompositionEvent	DOM L3	The composition of a passage of text is prepared (similar to keydown for a keyboard input, 
+but works with other inputs such as speech recognition).
+compositionupdate	CompositionEvent	DOM L3	A character is added to a passage of text being composed.
+contextmenu	MouseEvent	HTML5	The right button of the mouse is clicked (before the context menu is displayed).
+copy	ClipboardEvent 	Clipboard	The text selection has been added to the clipboard.
+cut	ClipboardEvent 	Clipboard	The text selection has been removed from the document and added to the clipboard.
+dblclick	MouseEvent	DOM L3	A pointing device button is clicked twice on an element.
+devicechange	Event	Media Capture and Streams	A media device such as a camera, microphone, or speaker is connected or removed from the 
+system.
+devicemotion	DeviceMotionEvent 	Device Orientation Events	Fresh data is available from a motion sensor.
+deviceorientation	DeviceOrientationEvent 	Device Orientation Events	Fresh data is available from an orientation sensor.
+dischargingtimechange	Event	Battery status	The dischargingTime attribute has been updated.
+DOMActivate 	UIEvent	DOM L3	A button, link or state changing element is activated (use click instead).
+DOMAttributeNameChanged 	MutationNameEvent	DOM L3 Removed	The name of an attribute changed (use mutation observers instead).
+DOMAttrModified 	MutationEvent	DOM L3	The value of an attribute has been modified (use mutation observers instead).
+DOMCharacterDataModified 	MutationEvent	DOM L3	A text or another CharacterData has changed (use mutation observers instead).
+DOMContentLoaded	Event	HTML5	The document has finished loading (but not its dependent resources).
+DOMElementNameChanged 	MutationNameEvent	DOM L3 Removed	The name of an element changed (use mutation observers instead).
+DOMFocusIn 	FocusEvent 	DOM L3	An element has received focus (use focus or focusin instead).
+DOMFocusOut 	FocusEvent 	DOM L3	An element has lost focus (use blur or focusout instead).
+DOMNodeInserted 	MutationEvent	DOM L3	A node has been added as a child of another node (use mutation observers instead).
+DOMNodeInsertedIntoDocument	MutationEvent	DOM L3	A node has been inserted into the document (use mutation observers instead).
+DOMNodeRemoved 	MutationEvent	DOM L3	A node has been removed from its parent node (use mutation observers instead).
+DOMNodeRemovedFromDocument 	MutationEvent	DOM L3	A node has been removed from the document (use mutation observers instead).
+DOMSubtreeModified 	MutationEvent	DOM L3	A change happened in the document (use mutation observers instead).
+drag	DragEvent	HTML5	An element or text selection is being dragged (every 350ms).
+dragend	DragEvent	HTML5	A drag operation is being ended (by releasing a mouse button or hitting the escape key).
+dragenter	DragEvent	HTML5	A dragged element or text selection enters a valid drop target.
+dragleave	DragEvent	HTML5	A dragged element or text selection leaves a valid drop target.
+dragover	DragEvent	HTML5	An element or text selection is being dragged over a valid drop target (every 350ms).
+dragstart	DragEvent	HTML5	The user starts dragging an element or text selection.
+drop	DragEvent	HTML5	An element is dropped on a valid drop target.
+durationchange	Event	HTML5 media	The duration attribute has been updated.
+emptied	Event	HTML5 media	The media has become empty; for example, this event is sent if the media has already been loaded 
+(or partially loaded), and the load() method is called to reload it.
+end 	Event	Web Speech API	The speech recognition service has disconnected.
+end 	SpeechSynthesisEvent	Web Speech API	The utterance has finished being spoken.
+ended	Event	HTML5 media	Playback has stopped because the end of the media was reached.
+ended	Event	Web Audio API	Playback has stopped because the end of the media was reached.
+endEvent	TimeEvent	SVG	A SMIL animation element ends.
+error	UIEvent	DOM L3	A resource failed to load.
+error	ProgressEvent	Progress and XMLHttpRequest	Progression has failed.
+error	Event	WebSocket	A WebSocket connection has been closed with prejudice (some data couldn't be sent for example).
+error	Event	Server Sent Events	An event source connection has been failed.
+error	Event	IndexedDB	A request caused an error and failed.
+error 	Event	Web Speech API	A speech recognition error occurs.
+error	SpeechSynthesisErrorEvent	Web Speech API	An error occurs that prevents the utterance from being successfully spoken.
+focus	FocusEvent 	DOM L3	An element has received focus (does not bubble).
+focusin	FocusEvent 	DOM L3	An element is about to receive focus (bubbles).
+focusout	FocusEvent 	DOM L3	An element is about to lose focus (bubbles).
+fullscreenchange	Event	Full Screen	An element was turned to fullscreen mode or back to normal mode.
+fullscreenerror	Event	Full Screen	It was impossible to switch to fullscreen mode for technical reasons or because the permission was 
+denied.
+gamepadconnected	GamepadEvent 	Gamepad	A gamepad has been connected.
+gamepaddisconnected	GamepadEvent 	Gamepad	A gamepad has been disconnected.
+gotpointercapture	PointerEvent	Pointer Events	Element receives pointer capture.
+hashchange	HashChangeEvent	HTML5	The fragment identifier of the URL has changed (the part of the URL after the #).
+lostpointercapture	PointerEvent	Pointer Events	Element lost pointer capture.
+input	Event	HTML5	The value of an element changes or the content of an element with the attribute contenteditable is modified.
+invalid	Event	HTML5	A submittable element has been checked and doesn't satisfy its constraints.
+keydown	KeyboardEvent	DOM L3	A key is pressed down.
+keypress	KeyboardEvent	DOM L3	A key is pressed down and that key normally produces a character value (use input instead).
+keyup	KeyboardEvent	DOM L3	A key is released.
+languagechange 	Event	HTML 5.1
+The definition of 'NavigatorLanguage.languages' in that specification.	The user's preferred languages have changed.
+levelchange	Event	Battery status	The level attribute has been updated.
+load	UIEvent	DOM L3	A resource and its dependent resources have finished loading.
+load	ProgressEvent	Progress and XMLHttpRequest	Progression has been successful.
+loadeddata	Event	HTML5 media	The first frame of the media has finished loading.
+loadedmetadata	Event	HTML5 media	The metadata has been loaded.
+loadend	ProgressEvent	Progress and XMLHttpRequest	Progress has stopped (after "error", "abort" or "load" have been dispatched).
+loadstart	ProgressEvent	Progress and XMLHttpRequest	Progress has begun.
+mark 	SpeechSynthesisEvent	Web Speech API	The spoken utterance reaches a named SSML "mark" tag.
+message	MessageEvent	WebSocket	A message is received through a WebSocket.
+message	MessageEvent	Web Workers	A message is received from a Web Worker.
+message	MessageEvent	Web Messaging	A message is received from a child (i)frame or a parent window.
+message	MessageEvent	Server Sent Events	A message is received through an event source.
+messageerror	MessageEvent	MessagePort, Web Workers, Broadcast Channel, Window	A message error is raised when a message is received by 
+an object.
+message 	ServiceWorkerMessageEvent or ExtendableMessageEvent, depending on context.	Service Workers	A message is received from a 
+service worker, or a message is received in a service worker from another context.
+mousedown	MouseEvent	DOM L3	A pointing device button (usually a mouse) is pressed on an element.
+mouseenter	MouseEvent	DOM L3	A pointing device is moved onto the element that has the listener attached.
+mouseleave	MouseEvent	DOM L3	A pointing device is moved off the element that has the listener attached.
+mousemove	MouseEvent	DOM L3	A pointing device is moved over an element.
+mouseout	MouseEvent	DOM L3	A pointing device is moved off the element that has the listener attached or off one of its children.
+mouseover	MouseEvent	DOM L3	A pointing device is moved onto the element that has the listener attached or onto one of its children.
+mouseup	MouseEvent	DOM L3	A pointing device button is released over an element.
+nomatch 	SpeechRecognitionEvent	Web Speech API	The speech recognition service returns a final result with no significant recognition.
+notificationclick	NotificationEvent 	Notifications API
+The definition of 'onnotificationclick' in that specification.	A system notification spawned by 
+ServiceWorkerRegistration.showNotification() has been clicked.
+offline	Event	HTML5 offline	The browser has lost access to the network.
+online	Event	HTML5 offline	The browser has gained access to the network (but particular websites might be unreachable).
+open	Event	WebSocket	A WebSocket connection has been established.
+open	Event	Server Sent Events	An event source connection has been established.
+orientationchange	Event	Screen Orientation	The orientation of the device (portrait/landscape) has changed
+pagehide	PageTransitionEvent	HTML5	A session history entry is being traversed from.
+pageshow	PageTransitionEvent	HTML5	A session history entry is being traversed to.
+paste	ClipboardEvent 	Clipboard	Data has been transferred from the system clipboard to the document.
+pause	Event	HTML5 media	Playback has been paused.
+pause 	SpeechSynthesisEvent	Web Speech API	The utterance is paused part way through.
+pointercancel	PointerEvent	Pointer Events	The pointer is unlikely to produce any more events.
+pointerdown	PointerEvent	Pointer Events	The pointer enters the active buttons state.
+pointerenter	PointerEvent	Pointer Events	Pointing device is moved inside the hit-testing boundary.
+pointerleave	PointerEvent	Pointer Events	Pointing device is moved out of the hit-testing boundary.
+pointerlockchange	Event	Pointer Lock	The pointer was locked or released.
+pointerlockerror	Event	Pointer Lock	It was impossible to lock the pointer for technical reasons or because the permission was denied.
+pointermove	PointerEvent	Pointer Events	The pointer changed coordinates.
+pointerout	PointerEvent	Pointer Events	The pointing device moved out of hit-testing boundary or leaves detectable hover range.
+pointerover	PointerEvent	Pointer Events	The pointing device is moved into the hit-testing boundary.
+pointerup	PointerEvent	Pointer Events	The pointer leaves the active buttons state.
+play	Event	HTML5 media	Playback has begun.
+playing	Event	HTML5 media	Playback is ready to start after having been paused or delayed due to lack of data.
+popstate	PopStateEvent	HTML5	A session history entry is being navigated to (in certain cases).
+progress	ProgressEvent	Progress and XMLHttpRequest	In progress.
+push	PushEvent 	Push API	A Service Worker has received a push message.
+pushsubscriptionchange	PushEvent 	Push API	A PushSubscription has expired.
+ratechange	Event	HTML5 media	The playback rate has changed.
+readystatechange	Event	HTML5 and XMLHttpRequest	The readyState attribute of a document has changed.
+repeatEvent	TimeEvent	SVG	A SMIL animation element is repeated.
+reset	Event	DOM L2, HTML5	A form is reset.
+resize	UIEvent	DOM L3	The document view has been resized.
+resourcetimingbufferfull	Performance	Resource Timing	The browser's resource timing buffer is full.
+result 	SpeechRecognitionEvent 	Web Speech API	The speech recognition service returns a result — a word or phrase has
+been positively recognized and this has been communicated back to the app.
+resume 	SpeechSynthesisEvent 	Web Speech API	A paused utterance is resumed.
+scroll	UIEvent	DOM L3	The document view or an element has been scrolled.
+seeked	Event	HTML5 media	A seek operation completed.
+seeking	Event	HTML5 media	A seek operation began.
+select	UIEvent	DOM L3	Some text is being selected.
+selectstart 	Event	Selection API	A selection just started.
+selectionchange 	Event	Selection API	The selection in the document has been changed.
+show	MouseEvent	HTML5	A contextmenu event was fired on/bubbled to an element that has a contextmenu attribute
+slotchange	Event	DOM	The node contents of a HTMLSlotElement (<slot>) have changed.
+soundend 	Event	Web Speech API	Any sound — recognisable speech or not — has stopped being detected.
+soundstart 	Event	Web Speech API	Any sound — recognisable speech or not — has been detected.
+speechend 	Event	Web Speech API	Speech recognised by the speech recognition service has stopped being detected.
+speechstart 	Event	Web Speech API	Sound that is recognised by the speech recognition service as speech has been detected.
+stalled	Event	HTML5 media	The user agent is trying to fetch media data, but data is unexpectedly not forthcoming.
+start 	Event	Web Speech API	The speech recognition service has begun listening to incoming audio with intent to recognize
+grammars associated with the current SpeechRecognition.
+start	SpeechSynthesisEvent	Web Speech API	The utterance has begun to be spoken.
+storage	StorageEvent	Web Storage	A storage area (localStorage or sessionStorage) has changed.
+submit	Event	DOM L2, HTML5	A form is submitted.
+success	Event	IndexedDB	A request successfully completed.
+suspend	Event	HTML5 media	Media data loading has been suspended.
+SVGAbort	SVGEvent	SVG	Page loading has been stopped before the SVG was loaded.
+SVGError	SVGEvent	SVG	An error has occurred before the SVG was loaded.
+SVGLoad	SVGEvent	SVG	An SVG document has been loaded and parsed.
+SVGResize	SVGEvent	SVG	An SVG document is being resized.
+SVGScroll	SVGEvent	SVG	An SVG document is being scrolled.
+SVGUnload	SVGEvent	SVG	An SVG document has been removed from a window or frame.
+SVGZoom	SVGZoomEvent	SVG	An SVG document is being zoomed.
+timeout	ProgressEvent	XMLHttpRequest	 
+timeupdate	Event	HTML5 media	The time indicated by the currentTime attribute has been updated.
+touchcancel	TouchEvent	Touch Events	A touch point has been disrupted in an implementation-specific manners (too many touch points 
+for example).
+touchend	TouchEvent	Touch Events	A touch point is removed from the touch surface.
+touchmove	TouchEvent	Touch Events	A touch point is moved along the touch surface.
+touchstart	TouchEvent	Touch Events	A touch point is placed on the touch surface.
+transitionend	TransitionEvent 	CSS Transitions	A CSS transition has completed.
+unload	UIEvent	DOM L3	The document or a dependent resource is being unloaded.
+upgradeneeded	 	IndexedDB	An attempt was made to open a database with a version number higher than its current version.
+A versionchange transaction has been created.
+userproximity	UserProximityEvent 	Proximity Sensor	Fresh data is available from a proximity sensor (indicates whether the nearby 
+object is near the device or not).
+voiceschanged 	Event	Web Speech API	The list of SpeechSynthesisVoice objects that would be returned by the
+SpeechSynthesis.getVoices() method has changed (when the voiceschanged event fires.)
+versionchange	 	IndexedDB	A versionchange transaction completed.
+visibilitychange	Event	Page visibility	The content of a tab has become visible or has been hidden.
+volumechange	Event	HTML5 media	The volume has changed.
+waiting	Event	HTML5 media	Playback has stopped because of a temporary lack of data.
+wheel	WheelEvent	DOM L3	A wheel button of a pointing device is rotated in any direction.
+Non-standard eventsSection
+Event Name	Event Type	Specification	Fired when...
+afterscriptexecute	Event	Mozilla Specific	A script has been executed.
+beforescriptexecute	Event	Mozilla Specific	A script is about to be executed.
+beforeinstallprompt	Event	Chrome specific	A user is prompted to save a web site to a home screen on mobile.
+cardstatechange	 	Firefox OS specific	The MozMobileConnection.cardState property changes value.
+change	DeviceStorageChangeEvent	Firefox OS specific	This event is triggered each time a file is created,
+modified or deleted on a given storage area.
+connectionInfoUpdate	 	Firefox OS specific	The informations about the signal strength and the link speed have been updated.
+cfstatechange	 	Firefox OS specific	The call forwarding state changes.
+datachange	 	Firefox OS specific	The MozMobileConnection.data object changes values.
+dataerror	 	Firefox OS specific	The MozMobileConnection.data object receive an error from the RIL.
+DOMMouseScroll	 	Mozilla specific	The wheel button of a pointing device is rotated
+(detail attribute is a number of lines). (use wheel instead)
+dragdrop 	DragEvent	Mozilla specific	An element is dropped (use drop instead).
+dragexit 	DragEvent	Mozilla specific	A drag operation is being ended(use dragend instead).
+draggesture 	DragEvent	Mozilla specific	The user starts dragging an element or text selection (use dragstart instead).
+icccardlockerror	 	Firefox OS specific	the MozMobileConnection.unlockCardLock() or MozMobileConnection.setCardLock() methods fails.
+iccinfochange	 	Firefox OS specific	The MozMobileConnection.iccInfo object changes.
+localized	 	Mozilla Specific	The page has been localized using data-l10n-* attributes.
+mousewheel 	 	IE invented	The wheel button of a pointing device is rotated.
+MozAudioAvailable	Event	Mozilla specific	The audio buffer is full and the corresponding raw samples are available.
+MozBeforeResize 	 	Mozilla specific	A window is about to be resized.
+mozbrowseractivitydone	 	Firefox OS Browser API-specific	Sent when some activity has been completed (complete description TBD.)
+mozbrowserasyncscroll	 	Firefox OS Browser API-specific	Sent when the scroll position within a browser <iframe> changes.
+mozbrowseraudioplaybackchange	 	Firefox OS Browser API-specific	Sent when audio starts or stops playing within the browser <iframe> content.
+mozbrowsercaretstatechanged	 	Firefox OS Browser API-specific	Sent when the text selected inside the browser <iframe> content changes.
+mozbrowserclose	 	Firefox OS Browser API-specific	Sent when window.close() is called within a browser <iframe>.
+mozbrowsercontextmenu	 	Firefox OS Browser API-specific	Sent when a browser <iframe> try to open a context menu.
+mozbrowserdocumentfirstpaint	 	Firefox OS Browser API-specific	Sent when a new paint occurs on any document in the browser <iframe>.
+mozbrowsererror	 	Firefox OS Browser API-specific	Sent when an error occured while trying to load a content within a browser iframe
+mozbrowserfindchange	 	Firefox OS Browser API-specific	Sent when a search operation is performed on the browser <iframe> content (see HTMLIFrameElement search methods.)
+mozbrowserfirstpaint	 	Firefox OS Browser API-specific	Sent when the <iframe> paints content for the first time (this doesn't include the initial paint from about:blank.)
+mozbrowsericonchange	 	Firefox OS Browser API-specific	Sent when the favicon of a browser iframe changes.
+mozbrowserlocationchange	 	Firefox OS Browser API-specific	Sent when an browser iframe's location changes.
+mozbrowserloadend	 	Firefox OS Browser API-specific	Sent when the browser iframe has finished loading all its assets.
+mozbrowserloadstart	 	Firefox OS Browser API-specific	Sent when the browser iframe starts to load a new page.
+mozbrowsermanifestchange	 	Firefox OS Browser API-specific	Sent when a the path to the app manifest changes, in the case of a browser <iframe> with an open web app embedded in it.
+mozbrowsermetachange	 	Firefox OS Browser API-specific	Sent when a <meta> elelment is added to, removed from or changed in the browser <iframe>'s content.
+mozbrowseropensearch	 	Firefox OS Browser API-specific	Sent when a link to a search engine is found.
+mozbrowseropentab	 	Firefox OS Browser API-specific	Sent when a new tab is opened within a browser <iframe> as a result of the user issuing a command to open a link target in a new tab (for example ctrl/cmd + click.)
+mozbrowseropenwindow	 	Firefox OS Browser API-specific	Sent when window.open() is called within a browser iframe.
+mozbrowserresize	 	Firefox OS Browser API-specific	Sent when the browser <iframe>'s window size has changed.
+mozbrowserscroll	 	Firefox OS Browser API-specific	Sent when the browser <iframe> content scrolls.
+mozbrowserscrollareachanged	 	Firefox OS Browser API-specific	Sent when the available scrolling area in the browser <iframe> changes. This can occur on resize and when the page size changes (while loading for example.)
+mozbrowserscrollviewchange	 	Firefox OS Browser API-specific	Sent when asynchronous scrolling (i.e. APCZ) starts or stops.
+mozbrowsersecuritychange	 	Firefox OS Browser API-specific	Sent when the SSL state changes within a browser iframe.
+mozbrowserselectionstatechanged	 	Firefox OS Browser API-specific	Sent when the text selected inside the browser <iframe> content changes. Note that this is deprecated, and newer implementations use mozbrowsercaretstatechanged instead.
+mozbrowsershowmodalprompt	 	Firefox OS Browser API-specific	Sent when alert(), confirm() or prompt() are called within a browser iframe
+mozbrowsertitlechange	 	Firefox OS Browser API-specific	Sent when the document.title changes within a browser iframe.
+mozbrowserusernameandpasswordrequired	 	Firefox OS Browser API-specific	Sent when an HTTP authentification is requested.
+mozbrowservisibilitychange	 	Firefox OS Browser API-specific	Sent when the visibility state of the current browser iframe <iframe> changes, for example due to a call to setVisible().
+MozGamepadButtonDown	 	To be specified	A gamepad button is pressed down.
+MozGamepadButtonUp	 	To be specified	A gamepad button is released.
+MozMousePixelScroll 	 	Mozilla specific	The wheel button of a pointing device is rotated (detail attribute is a number of pixels). (use wheel instead)
+MozOrientation 	 	Mozilla specific	Fresh data is available from an orientation sensor (see deviceorientation).
+MozScrolledAreaChanged	UIEvent	Mozilla specific	The document view has been scrolled or resized.
+moztimechange	 	Mozilla specific	The time of the device has been changed.
+MozTouchDown 	 	Mozilla specific	A touch point is placed on the touch surface (use touchstart instead).
+MozTouchMove 	 	Mozilla specific	A touch point is moved along the touch surface (use touchmove instead).
+MozTouchUp 	 	Mozilla specific	A touch point is removed from the touch surface (use touchend instead).
+alerting	CallEvent	To be specified	The correspondent is being alerted (his/her phone is ringing).
+busy	CallEvent	To be specified	The line of the correspondent is busy.
+callschanged	CallEvent	To be specified	A call has been added or removed from the list of current calls.
+onconnected connected	CallEvent	To be specified	A call has been connected.
+connecting	CallEvent	To be specified	A call is about to connect.
+delivered	SMSEvent	To be specified	An SMS has been successfully delivered.
+dialing	CallEvent	To be specified	The number of a correspondent has been dialed.
+disabled	 	Firefox OS specific	Wifi has been disabled on the device.
+disconnected	CallEvent	To be specified	A call has been disconnected.
+disconnecting	CallEvent	To be specified	A call is about to disconnect.
+enabled	 	Firefox OS specific	Wifi has been enabled on the device.
+error	CallEvent	To be specified	An error occurred.
+held	CallEvent	To be specified	A call has been held.
+holding	CallEvent	To be specified	A call is about to be held.
+incoming	CallEvent	To be specified	A call is being received.
+received	SMSEvent	To be specified	An SMS has been received.
+resuming	CallEvent	To be specified	A call is about to resume.
+sent	SMSEvent	To be specified	An SMS has been sent.
+statechange	CallEvent	To be specified	The state of a call has changed.
+statuschange	 	Firefox OS specific	The status of the Wifi connection changed.
+overflow	UIEvent	Mozilla specific	An element has been overflowed by its content or has been rendered for the first time in this state (only works for elements styled with overflow != visible).
+smartcard-insert	 	Mozilla specific	A smartcard has been inserted.
+smartcard-remove	 	Mozilla specific	A smartcard has been removed.
+stkcommand	 	Firefox OS specific	The STK Proactive Command is issued from ICC.
+stksessionend	 	Firefox OS specific	The STK Session is terminated by ICC.
+touchenter	TouchEvent	Touch Events Removed	 
+touchleave	TouchEvent	Touch Events Removed	 
+underflow	UIEvent	Mozilla specific	An element is no longer overflowed by its content (only works for elements styled with overflow != visible).
+uploadprogress 	ProgressEvent	Mozilla Specific	Upload is in progress (see progress).
+ussdreceived
+
+ 	Firefox OS specific	A new USSD message is received
+voicechange	 	Firefox OS specific	The MozMobileConnection.voice object changes values.
+msContentZoom	 	Microsoft specific	 
+MSManipulationStateChanged	 	Microsoft specific	 
+MSPointerHover 	 	Microsoft specific	 
+Mozilla-specific eventsSection
+Note: those events are never exposed to web content and can only be used in chrome content context.
+
+XUL eventsSection
+Event Name	Event Type	Specification	Fired when...
+broadcast	 	XUL	An observer noticed a change to the attributes of a watched broadcaster.
+CheckboxStateChange	 	XUL	The state of a checkbox has been changed either by a user action or by a script (useful for accessibility).
+close	 	XUL	The close button of the window has been clicked.
+command	 	XUL	An element has been activated.
+commandupdate	 	XUL	A command update occurred on a commandset element.
+DOMMenuItemActive	 	XUL	A menu or menuitem has been hovered or highlighted.
+DOMMenuItemInactive	 	XUL	A menu or menuitem is no longer hovered or highlighted.
+popuphidden	PopupEvent	XUL	A menupopup, panel or tooltip has been hidden.
+popuphiding	PopupEvent	XUL	A menupopup, panel or tooltip is about to be hidden.
+popupshowing	PopupEvent	XUL	A menupopup, panel or tooltip is about to become visible.
+popupshown	PopupEvent	XUL	A menupopup, panel or tooltip has become visible.
+RadioStateChange	 	XUL	The state of a radio has been changed either by a user action or by a script (useful for accessibility).
+ValueChange	 	XUL	The value of an element has changed (a progress bar for example, useful for accessibility).
+Add-on-specific eventsSection
+Event Name	Event Type	Specification	Fired when...
+MozSwipeGesture	 	Addons specific	A touch point is swiped across the touch surface
+MozMagnifyGestureStart	 	Addons specific	Two touch points start to move away from each other.
+MozMagnifyGestureUpdate	 	Addons specific	Two touch points move away from each other (after a MozMagnifyGestureStart).
+MozMagnifyGesture	 	Addons specific	Two touch points moved away from each other (after a sequence of MozMagnifyGestureUpdate).
+MozRotateGestureStart	 	Addons specific	Two touch points start to rotate around a point.
+MozRotateGestureUpdate	 	Addons specific	Two touch points rotate around a point (after a MozRotateGestureStart).
+MozRotateGesture	 	Addons specific	Two touch points rotate around a point (after a sequence of MozRotateGestureUpdate).
+MozTapGesture	 	Addons specific	Two touch points are tapped on the touch surface.
+MozPressTapGesture	 	Addons specific	A "press-tap" gesture happened on the touch surface (first finger down, second finger down, second finger up, first finger up).
+MozEdgeUIGesture	 	Addons specific	A touch point is swiped across the touch surface to invoke the edge UI (Win8 only).
+MozAfterPaint	 	Addons specific	Content has been repainted.
+DOMPopupBlocked	 	Addons specific	A popup has been blocked
+DOMWindowCreated	 	Addons specific	A window has been created.
+DOMWindowClose	 	Addons specific	A window is about to be closed.
+DOMTitleChanged	 	Addons specifc	The title of a window has changed.
+DOMLinkAdded	 	Addons specifc	A link has been added a document.
+DOMLinkRemoved	 	Addons specifc	A link has been removed inside from a document.
+DOMMetaAdded	 	Addons specific	A meta element has been added to a document.
+DOMMetaRemoved	 	Addons specific	A meta element has been removed from a document.
+DOMWillOpenModalDialog	 	Addons specific	A modal dialog is about to open.
+DOMModalDialogClosed	 	Addons specific	A modal dialog has been closed.
+DOMAutoComplete	 	Addons specific	The content of an element has been auto-completed.
+DOMFrameContentLoaded	 	Addons specific	The frame has finished loading (but not its dependent resources).
+AlertActive	 	Addons specific	A notification element is shown.
+AlertClose	 	Addons specific	A notification element is closed.
+fullscreen	 	Addons specific	Browser fullscreen mode has been entered or left.
+sizemodechange	 	Addons specific	Window has entered/left fullscreen mode, or has been minimized/unminimized.
+MozEnteredDomFullscreen	 	Addons specific	DOM fullscreen mode has been entered.
+SSWindowClosing	 	Addons specific	The session store will stop tracking this window.
+SSTabClosing	 	Addons specific	The session store will stop tracking this tab.
+SSTabRestoring	 	Addons specific	A tab is about to be restored.
+SSTabRestored	 	Addons specific	A tab has been restored.
+SSWindowStateReady	 	Addons specific	A window state has switched to "ready".
+SSWindowStateBusy	 	Addons specific	A window state has switched to "busy".
+TabOpen	 	Addons specific	A tab has been opened.
+TabClose	 	Addons specific	A tab has been closed.
+TabSelect	 	Addons specific	A tab has been selected.
+TabShow	 	Addons specific	A tab has been shown.
+TabHide	 	Addons specific	A tab has been hidden.
+TabPinned	 	Addons specific	A tab has been pinned.
+TabUnpinned	 	Addons specific	A tab has been unpinned.
+Developer tool-specific eventsSection
+Event Name	Event Type	Specification	Fired when...
+CssRuleViewRefreshed	 	devtools specific	The "Rules" view of the style inspector has been updated.
+CssRuleViewChanged	 	devtools specific	The "Rules" view of the style inspector has been changed.
+CssRuleViewCSSLinkClicked	 	devtools specific	A link to a CSS file has been clicked in the "Rules" view of the style inspector.
+See alsoSection
+Event
+Event developer guide
+Document Tags and Contributors
+ Tags:  Event Overview Reference
+ Contributors to this page: alattalatta, mfuji09, wbamberg, estelle, mdnwebdocs-bot, chrisdavidmills, mfluehr, chharvey, ExE-Boss, karbassi, tuespetre, karlstolley, GuilloOme, Sheppy, JessePotterMusic, WhiteHawk-taka, rosannaberardi, 2xblue, HaehnleinMar, gacar, neo1691, shtarbanov, GijsKruitbosch, jpmedley, slimsag, bep, teoli, AFBarstow, fscholz, Flaki, Nickolay, emersonveenstra, kohei.yoshino, WP-Makyen, mkretschek, kscarfone, Jeremie, srasku, ethertank, maybe, complynx, louisremi, Pettay, Pomax
