@@ -1,4 +1,4 @@
-https://developer.mozilla.org/en-US/docs/Web/Events
+[Link](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 DOM Events are sent to notify code of interesting things that have taken place. 
 Each event is represented by an object which is based on the Event interface, 
