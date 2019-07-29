@@ -1,0 +1,26 @@
+<hello name="{{ name }}"></hello>
+<h2>1.String Interpolation</h2>
+<p>
+  <!--Start editing to see some magic happen :)-->
+  server Id is {{ serverID }} and the status is {{ serverStatus }}<br>
+  Now calling a method named <b>getServerStatus</b> using string Interpolation which will give the status of the running server.
+  <br>The status of the server is <b>{{ getserverStatus() }}</b>
+</p>
+<b><hr></b>
+<h2>2.Property Binding</h2>
+<p>This is an example of Property Binding in which the property <b>allowNewServer</b> is initiated and the button is disabled for 2sec.<br>
+Property binding is used to bind the HTML to a particular property which will be updated dynamically</p>
+<button class="btn btn-primary" [disabled]=!allowNewServer>Add Server</button>
+<p [innerText]=allowNewServer></p>
+<b>Property binding Vs String Interpolation</b>
+<p>
+If we want to output something in the HTML template and print some text to it We use String interpolation.<br>
+<br>
+String interpolation only works with normal template not with another expression of that template,mixing property binding and stroing interpolation will break the code of the app in angular.</p>
+<br>
+<p>if we want to change some property be that of HTML element or of any directive or a component we use property binding.</p>
+<h2>3.Event Binding</h2>
+It is used to react to the user events or we can say listen to the clicks<br>
+Here in event binding we are calling a method named <b>onCreateServer</b> which causes the event shown below the button,in which <b>Click</b> event causes the change in <b>serverCreationstatus</b> method.<br>
+<button class="btn btn-primary" [disabled]=!allowNewServer (click)="onCreateServer()">Add Server</button>
+<p>{{ serverCreationStatus }}</p>
